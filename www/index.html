@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="stylesheet" href="fonts/opensans/css/fonts.css">
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) 
+    <script src="cordova.js"></script>-->
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    
+    <link href="css/ionic.app.css" rel="stylesheet">
+    
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+    
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-stable">
+                <ion-nav-back-button></ion-nav-back-button>
+                <ion-nav-buttons side="left">
+                    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left" id="side-menu21">
+            <ion-header-bar class="bar-stable">
+                <div class="title">Menu</div>
+            </ion-header-bar>
+            <ion-content padding="false" class="side-menu-left has-header">
+                <ion-list id="menu-list3" class=" " data-componentid="list3">
+                    <ion-item id="menu-list-item2" ui-sref="editProfile" menu-close="" class="  " data-componentid="list-item2">EDIT PROFILE</ion-item>
+                    <ion-item id="menu-list-item3" ui-sref="sellABook" menu-close="" class="  " data-componentid="list-item3">SELL A BOOK</ion-item>
+                    <ion-item id="menu-list-item4" ui-sref="bookshelf" menu-close="" class="  " data-componentid="list-item4">BOOKSHELF</ion-item>
+                    <ion-item id="menu-list-item5" ui-sref="messages" menu-close="" class="  " data-componentid="list-item5">MESSAGES</ion-item>
+                </ion-list>
+                <div class="spacer" data-componentid="spacer2" style="width: 0px; height: 107px;"></div>
+                <div class="spacer" data-componentid="spacer3" style="height: 100px;"></div>
+                <a ui-sref="login" menu-close="" id="menu-button1" style="text-align:left;border-radius:0px 0px 0px 0px;" class=" button button-dark  button-full button-clear icon-left ion-log-out " data-componentid="button1">Log out!</a>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</div>
+  </body>
+</html>
